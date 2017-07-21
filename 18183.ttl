@@ -1,0 +1,346 @@
+# ClinVar ontology
+@prefix cvo:                <http://purl.jp/bio/10/clinvar-ontology#> .
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:                 <http://purl.org/dc/elements/1.1/> .
+@prefix dct:                <http://purl.org/dc/terms/> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix faldo:              <http://biohackathon.org/resource/faldo#> .
+@prefix obo:                <http://purl.obolibrary.org/obo/> .
+@prefix sio:                <http://semanticscience.org/resource/> .
+@prefix so:                 <http://purl.obolibrary.org/obo/so#> .
+@prefix cvo:                <http://purl.jp/bio/10/clinvar/> .
+@prefix exo:                <http://purl.jp/bio/10/exac/> .
+@prefix clinvar:            <http://identifiers.org/clinvar/> .
+@prefix clinvar_record:     <http://identifiers.org/clinvar.record/> .
+@prefix clinvar_submission: <http://identifiers.org/clinvar.submission/> .
+@prefix dbsnp:              <http://identifiers.org/dbsnp/> .
+@prefix exac_variant:       <http://identifiers.org/exac.variant/> .
+@prefix efo:                <http://identifiers.org/efo/> .
+@prefix ensembl:            <http://identifiers.org/ensembl/> .
+@prefix hgmd:               <http://identifiers.org/hgmd/> .
+@prefix hgnc:               <http://identifiers.org/hgnc/> .
+@prefix hp:                 <http://identifiers.org/hp/> .
+@prefix medgen:             <http://identifiers.org/medgen/> .
+@prefix mesh:               <http://identifiers.org/mesh/> .
+@prefix ncbigene:           <http://identifiers.org/ncbigene/> .
+@prefix omim:               <http://identifiers.org/omim/> .
+@prefix orphanet:           <http://identifiers.org/orphanet/> .
+@prefix pmc:                <http://identifiers.org/pmc/> .
+@prefix pubmed:             <http://identifiers.org/pubmed/> .
+@prefix snomedct:           <http://identifiers.org/snomedct/> .
+@prefix uniprot:            <http://identifiers.org/uniprot/> .
+@prefix refseq:             <http://identifiers.org/refseq/> .
+@prefix ncbi_bookshelf:     <https://www.ncbi.nlm.nih.gov/books/> .
+@prefix uniprot_protein:    <http://purl.uniprot.org/uniprot/> .
+@prefix uniprot_annotation: <http://purl.uniprot.org/annotation/> .
+@prefix clinvar_homepage:   <https://www.ncbi.nlm.nih.gov/clinvar/variation/> .
+
+clinvar:18183
+	rdf:type			cvo:Variant ;
+	dct:identifier			"18183" ;
+	rdfs:label			"NM_000668.5(ADH1B):c.1108C>T (p.Arg370Cys)" ;
+	foaf:homepage			clinvar_homepage:18183 ;
+	rdfs:seeAlso			omim:103720.0002 ;
+	rdfs:seeAlso			dbsnp:rs2066702 ;
+	cvo:sequence_location		[
+		cvo:assembly			"GRCh38" ;
+		cvo:assembly_accession_version	"GCF_000001405.33" ;
+		cvo:assembly_status		"current" ;
+		cvo:chr				"4" ;
+		cvo:sequence_accession		"NC_000004.12" ;
+		cvo:variant_start		99307860 ;
+		cvo:variant_stop		99307860 ;
+		cvo:variant_length		1 ;
+		cvo:reference_allele		"G" ;
+		cvo:alternate_allele		"A" ;
+		cvo:strand			"-" .
+	] ;
+	cvo:sequence_location		[
+		cvo:assembly			"GRCh37" ;
+		cvo:assembly_accession_version	"GCF_000001405.25" ;
+		cvo:assembly_status		"previous" ;
+		cvo:chr				"4" ;
+		cvo:sequence_accession		"NC_000004.11" ;
+		cvo:variant_start		100229017 ;
+		cvo:variant_stop		100229017 ;
+		cvo:variant_length		1 ;
+		cvo:reference_allele		"G" ;
+		cvo:alternate_allele		"A" ;
+		cvo:strand			"-" .
+	] ;
+	cvo:cytogenetic_location	"4q23" ;
+	cvo:attribute			[
+		cvo:attribute_value		"0.01816(A)" ;
+		cvo:attribute_type		"AlleleFrequency" ;
+		cvo:attribute_xref_db		"dbSNP" ;
+		cvo:attribute_xref_id		"2066702" ;
+		rdfs:seeAlso			"dbSNP:2066702" ;
+		cvo:attribute_xref_db		"Exome Aggregation Consortium (ExAC)" ;
+		cvo:attribute_xref_id		"rs2066702" ;
+		rdfs:seeAlso			"Exome Aggregation Consortium (ExAC):rs2066702" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"0.064201137936" ;
+		cvo:attribute_type		"AlleleFrequency" ;
+		cvo:attribute_xref_db		"dbSNP" ;
+		cvo:attribute_xref_id		"2066702" ;
+		rdfs:seeAlso			"dbSNP:2066702" ;
+		cvo:attribute_xref_db		"NHLBI GO Exome Sequencing Project (ESP)" ;
+		cvo:attribute_xref_id		"ESP6500SI-V2" ;
+		rdfs:seeAlso			"NHLBI GO Exome Sequencing Project (ESP):ESP6500SI-V2" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"0.0531(A)" ;
+		cvo:attribute_type		"GlobalMinorAlleleFrequency" ;
+		cvo:attribute_xref_db		"dbSNP" ;
+		cvo:attribute_xref_id		"2066702" ;
+		rdfs:seeAlso			"dbSNP:2066702" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NM_000668.5:c.1108C>T" ;
+		cvo:attribute_change		"c.1108C>T" ;
+		cvo:attribute_accession		"NM_000668" ;
+		cvo:attribute_version		"5" ;
+		cvo:attribute_type		"HGVS, coding, RefSeq" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NG_011435.1:g.18556C>T" ;
+		cvo:attribute_change		"g.18556C>T" ;
+		cvo:attribute_accession		"NG_011435" ;
+		cvo:attribute_version		"1" ;
+		cvo:attribute_type		"HGVS, genomic, RefSeqGene" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NC_000004.12:g.99307860G>A" ;
+		cvo:attribute_change		"g.99307860G>A" ;
+		cvo:attribute_accession		"NC_000004" ;
+		cvo:attribute_version		"12" ;
+		cvo:attribute_type		"HGVS, genomic, top level" ;
+		cvo:attribute_integer_value	"38" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NC_000004.11:g.100229017G>A" ;
+		cvo:attribute_change		"g.100229017G>A" ;
+		cvo:attribute_accession		"NC_000004" ;
+		cvo:attribute_version		"11" ;
+		cvo:attribute_type		"HGVS, genomic, top level, previous" ;
+		cvo:attribute_integer_value	"37" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NM_000668.4:c.1108C>T" ;
+		cvo:attribute_change		"c.1108C>T" ;
+		cvo:attribute_accession		"NM_000668" ;
+		cvo:attribute_version		"4" ;
+		cvo:attribute_type		"HGVS, previous" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"NP_000659.2:p.Arg370Cys" ;
+		cvo:attribute_change		"p.Arg370Cys" ;
+		cvo:attribute_accession		"NP_000659" ;
+		cvo:attribute_version		"2" ;
+		cvo:attribute_type		"HGVS, protein, RefSeq" ;
+		cvo:attribute_xref_db		"dbSNP" ;
+		cvo:attribute_xref_id		"2066702" ;
+		rdfs:seeAlso			"dbSNP:2066702" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"missense variant" ;
+		cvo:attribute_type		"MolecularConsequence" ;
+		cvo:attribute_xref_db		"Sequence Ontology" ;
+		cvo:attribute_xref_id		"SO:0001583" ;
+		rdfs:seeAlso			"Sequence Ontology:SO:0001583" ;
+		cvo:attribute_xref_db		"RefSeq" ;
+		cvo:attribute_xref_id		"NM_000668.5:c.1108C>T" ;
+		rdfs:seeAlso			"RefSeq:NM_000668.5:c.1108C>T" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"R370C" ;
+		cvo:attribute_type		"ProteinChange1LetterCode" ;
+		cvo:attribute_xref_db		"OMIM" ;
+		cvo:attribute_xref_id		"103720.0002" ;
+		rdfs:seeAlso			"OMIM:103720.0002" ;
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"ARG370CYS" ;
+		cvo:attribute_type		"ProteinChange3LetterCode" ;
+		cvo:attribute_xref_db		"OMIM" ;
+		cvo:attribute_xref_id		"103720.0002" ;
+		rdfs:seeAlso			"OMIM:103720.0002" ;
+	] ;
+	cvo:phenotype			[
+		cvo:trait_type			"Disease" ;
+		cvo:trait_name			"Alcohol dependence" ;
+		cvo:trait_alt_name		"ALCOHOLISM" ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"Genetic Alliance" ;
+			cvo:trait_xref_id		"Alcohol+dependence/7663" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103780" ;
+			cvo:trait_xref_type		"MIM" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"100650.0001" ;
+			cvo:trait_xref_type		"Allelic variant" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103720.0001" ;
+			cvo:trait_xref_type		"Allelic variant" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103720.0002" ;
+			cvo:trait_xref_type		"Allelic variant" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103730.0001" ;
+			cvo:trait_xref_type		"Allelic variant" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103730.0002" ;
+			cvo:trait_xref_type		"Allelic variant" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"MedGen" ;
+			cvo:trait_xref_id		"C0001973" ;
+		] ;
+		cvo:trait_xref			[
+			cvo:trait_xref_db		"OMIM" ;
+			cvo:trait_xref_id		"103780" ;
+			cvo:trait_xref_type		"MIM" ;
+		] ;
+	] ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103780> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/100650.0001> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103720.0001> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103720.0002> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103730.0001> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103730.0002> ;
+	cvo:phenotype_xref		<http://identifiers.org/medgen/C0001973> ;
+	cvo:phenotype_xref		<http://identifiers.org/omim/103780> ;
+	cvo:number_of_submissions	1 ;
+	cvo:reference			clinvar_record:RCV000019815 .
+
+<http://identifiers.org/omim/103780>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103780" .
+
+<http://identifiers.org/omim/100650.0001>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"100650.0001" .
+
+<http://identifiers.org/omim/103720.0001>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103720.0001" .
+
+<http://identifiers.org/omim/103720.0002>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103720.0002" .
+
+<http://identifiers.org/omim/103730.0001>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103730.0001" .
+
+<http://identifiers.org/omim/103730.0002>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103730.0002" .
+
+<http://identifiers.org/medgen/C0001973>
+	rdf:type			<http://identifiers.org/medgen> ;
+	dc:identifier			"C0001973" .
+
+<http://identifiers.org/omim/103780>
+	rdf:type			<http://identifiers.org/omim> ;
+	dc:identifier			"103780" .
+
+clinvar_record:RCV000019815
+	rdf:type			cvo:ReferenceClinVar ;
+	dct:identifier			"RCV000019815.2" ;
+	cvo:accession			"RCV000019815" ;
+	cvo:version			"2" ;
+	rdfs:label			"NM_000668.5(ADH1B):c.1108C>T (p.Arg370Cys) AND Alcohol dependence" ;
+	cvo:assertion_type		"variation to disease" ;
+	cvo:date_created		"2012-08-13"^^xsd:date ;
+	cvo:date_last_updated		"2017-05-07"^^xsd:date ;
+	cvo:date_updated		"2017-05-07"^^xsd:date ;
+	cvo:record_status		"current" ;
+	cvo:clinical_significance	"protective" ;
+	cvo:review_status		"no assertion criteria provided" ;
+	cvo:date_last_evaluated		"2007-01-01"^^xsd:date ;
+	cvo:sample_origin		"germline" ;
+	cvo:sample_species		"human" ;
+	cvo:sample_taxonomy_id		"9606" ;
+	cvo:sample_affected_status	"not provided" ;
+	cvo:collection_method		"literature only" ;
+	cvo:observation			[
+		rdfs:comment			"The ARG369CYS variant has been designated as R370C (rs2066702) based on numbering which includes the translation initiation codon (Edenberg, 2007)." ;
+		dct:references			pubmed:17718394 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"The cys369 variant of ADH1B is often referred to as ADH1B*3. However, Edenberg (2007) noted that ADH1B*3 is an allele that also includes the arg48 ADH1B variant (103720.0001)." ;
+		dct:references			pubmed:17718394 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Bosron et al. (1980) described a novel molecular isoform of human ADH1B, designated ADH(Indianapolis), in 29% of liver specimens from African Americans. Bosron et al. (1983) found that the frequency of the Indianapolis variant was 0.16 in African Americans and was not found in any of 63 livers from white Americans. Agarwal et al. (1981) could find no instance of the Indianapolis variant in Germany or Japan." ;
+		dct:references			pubmed:6354175, pubmed:7003596, pubmed:7035335 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Burnell et al. (1987) demonstrated that the variant observed in African Americans results from an arg370-to-cys substitution in exon 9 of the ADH1B gene: they referred to this variant as ADH1B*3. Burnell et al. (1987) predicted that arg370 interacts with the nicotinamide phosphate moiety of NAD(H) and that this accounts for the effect of the R370C substitution in decreasing the isoenzyme's affinity for coenzyme, which results in higher turnover rate during ethanol oxidation." ;
+		dct:references			pubmed:3619918 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Edenberg et al. (2006) presented evidence suggesting that the ADH1B*3 allele has a protective effect against alcohol dependence among African Americans." ;
+		dct:references			pubmed:16571603 .
+	] ;
+	cvo:submission			clinvar_submission:SCV000040113 .
+
+clinvar_submission:SCV000040113
+	rdf:type			cvo:Submission ;
+	dct:identifier			"SCV000040113.1" ;
+	cvo:accession			"SCV000040113" ;
+	cvo:version			"1" ;
+	rdfs:label			"ADH1B, ARG370CYS_ALCOHOL DEPENDENCE, PROTECTION AGAINST" ;
+	cvo:assertion_type		"variation to disease" ;
+	cvo:date_updated		"2017-04-07"^^xsd:date ;
+	cvo:record_status		"current" ;
+	cvo:clinical_significance	"protective" ;
+	cvo:review_status		"no assertion criteria provided" ;
+	cvo:date_last_evaluated		"2007-01-01"^^xsd:date ;
+	cvo:sample_origin		"germline" ;
+	cvo:sample_species		"human" ;
+	cvo:sample_affected_status	"not provided" ;
+	cvo:collection_method		"literature only" ;
+	cvo:observation			[
+		rdfs:comment			"The ARG369CYS variant has been designated as R370C (rs2066702) based on numbering which includes the translation initiation codon (Edenberg, 2007)." ;
+		dct:references			pubmed:17718394 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"The cys369 variant of ADH1B is often referred to as ADH1B*3. However, Edenberg (2007) noted that ADH1B*3 is an allele that also includes the arg48 ADH1B variant (103720.0001)." ;
+		dct:references			pubmed:17718394 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Bosron et al. (1980) described a novel molecular isoform of human ADH1B, designated ADH(Indianapolis), in 29% of liver specimens from African Americans. Bosron et al. (1983) found that the frequency of the Indianapolis variant was 0.16 in African Americans and was not found in any of 63 livers from white Americans. Agarwal et al. (1981) could find no instance of the Indianapolis variant in Germany or Japan." ;
+		dct:references			pubmed:7003596, pubmed:6354175, pubmed:7035335 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Burnell et al. (1987) demonstrated that the variant observed in African Americans results from an arg370-to-cys substitution in exon 9 of the ADH1B gene: they referred to this variant as ADH1B*3. Burnell et al. (1987) predicted that arg370 interacts with the nicotinamide phosphate moiety of NAD(H) and that this accounts for the effect of the R370C substitution in decreasing the isoenzyme's affinity for coenzyme, which results in higher turnover rate during ethanol oxidation." ;
+		dct:references			pubmed:3619918 .
+	] ;
+	cvo:observation			[
+		rdfs:comment			"Edenberg et al. (2006) presented evidence suggesting that the ADH1B*3 allele has a protective effect against alcohol dependence among African Americans." ;
+		dct:references			pubmed:16571603 .
+	] ;
+	cvo:attribute			[
+		cvo:attribute_value		"ARG370CYS" ;
+		cvo:attribute_type		"NonHGVS" ;
+	] ;
+	cvo:submitter			"OMIM" ;
+	cvo:submission_date		"2010-11-18"^^xsd:date .

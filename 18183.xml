@@ -1,0 +1,235 @@
+<ClinVarSet ID="19945654">
+  <RecordStatus>current</RecordStatus>
+  <Title>NM_000668.5(ADH1B):c.1108C&gt;T (p.Arg370Cys) AND Alcohol dependence</Title>
+  <ReferenceClinVarAssertion DateCreated="2012-08-13" DateLastUpdated="2017-05-07" ID="77318">
+    <ClinVarAccession Acc="RCV000019815" Version="2" Type="RCV" DateUpdated="2017-05-07"/>
+    <RecordStatus>current</RecordStatus>
+    <ClinicalSignificance DateLastEvaluated="2007-01-01">
+      <ReviewStatus>no assertion criteria provided</ReviewStatus>
+      <Description>protective</Description>
+    </ClinicalSignificance>
+    <Assertion Type="variation to disease"/>
+    <ObservedIn>
+      <Sample>
+        <Origin>germline</Origin>
+        <Species TaxonomyId="9606">human</Species>
+        <AffectedStatus>not provided</AffectedStatus>
+      </Sample>
+      <Method>
+        <MethodType>literature only</MethodType>
+      </Method>
+      <ObservedData ID="19138968">
+        <Attribute Type="Description">The ARG369CYS variant has been designated as R370C (rs2066702) based on numbering which includes the translation initiation codon (Edenberg, 2007).</Attribute>
+        <Citation Type="general">
+          <ID Source="PubMed">17718394</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData ID="19138968">
+        <Attribute Type="Description">The cys369 variant of ADH1B is often referred to as ADH1B*3. However, Edenberg (2007) noted that ADH1B*3 is an allele that also includes the arg48 ADH1B variant (103720.0001).</Attribute>
+        <Citation Type="general">
+          <ID Source="PubMed">17718394</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData ID="19138968">
+        <Attribute Type="Description">Bosron et al. (1980) described a novel molecular isoform of human ADH1B, designated ADH(Indianapolis), in 29% of liver specimens from African Americans. Bosron et al. (1983) found that the frequency of the Indianapolis variant was 0.16 in African Americans and was not found in any of 63 livers from white Americans. Agarwal et al. (1981) could find no instance of the Indianapolis variant in Germany or Japan.</Attribute>
+        <Citation Type="general">
+          <ID Source="PubMed">6354175</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">7003596</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">7035335</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData ID="19138968">
+        <Attribute Type="Description">Burnell et al. (1987) demonstrated that the variant observed in African Americans results from an arg370-to-cys substitution in exon 9 of the ADH1B gene: they referred to this variant as ADH1B*3. Burnell et al. (1987) predicted that arg370 interacts with the nicotinamide phosphate moiety of NAD(H) and that this accounts for the effect of the R370C substitution in decreasing the isoenzyme's affinity for coenzyme, which results in higher turnover rate during ethanol oxidation.</Attribute>
+        <Citation Type="general">
+          <ID Source="PubMed">3619918</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData ID="19138968">
+        <Attribute Type="Description">Edenberg et al. (2006) presented evidence suggesting that the ADH1B*3 allele has a protective effect against alcohol dependence among African Americans.</Attribute>
+        <Citation Type="general">
+          <ID Source="PubMed">16571603</ID>
+        </Citation>
+      </ObservedData>
+    </ObservedIn>
+    <MeasureSet Type="Variant" ID="18183">
+      <Measure Type="single nucleotide variant" ID="33222">
+        <Name>
+          <ElementValue Type="Preferred">NM_000668.5(ADH1B):c.1108C&gt;T (p.Arg370Cys)</ElementValue>
+        </Name>
+        <AttributeSet>
+          <Attribute Type="AlleleFrequency">0.01816(A)</Attribute>
+          <XRef DB="dbSNP" ID="2066702"/>
+          <XRef DB="Exome Aggregation Consortium (ExAC)" ID="rs2066702"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="AlleleFrequency">0.064201137936</Attribute>
+          <XRef DB="dbSNP" ID="2066702"/>
+          <XRef DB="NHLBI GO Exome Sequencing Project (ESP)" ID="ESP6500SI-V2" URL="http://evs.gs.washington.edu/EVS/"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="GlobalMinorAlleleFrequency">0.0531(A)</Attribute>
+          <XRef DB="dbSNP" ID="2066702"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="c.1108C&gt;T" Accession="NM_000668" Version="5" Type="HGVS, coding, RefSeq">NM_000668.5:c.1108C&gt;T</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="g.18556C&gt;T" Accession="NG_011435" Version="1" Type="HGVS, genomic, RefSeqGene">NG_011435.1:g.18556C&gt;T</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="g.99307860G&gt;A" Accession="NC_000004" Version="12" Type="HGVS, genomic, top level" integerValue="38">NC_000004.12:g.99307860G&gt;A</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="g.100229017G&gt;A" Accession="NC_000004" Version="11" Type="HGVS, genomic, top level, previous" integerValue="37">NC_000004.11:g.100229017G&gt;A</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="c.1108C&gt;T" Accession="NM_000668" Version="4" Type="HGVS, previous">NM_000668.4:c.1108C&gt;T</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Change="p.Arg370Cys" Accession="NP_000659" Version="2" Type="HGVS, protein, RefSeq">NP_000659.2:p.Arg370Cys</Attribute>
+          <XRef Type="rs" ID="2066702" DB="dbSNP"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="MolecularConsequence">missense variant</Attribute>
+          <XRef ID="SO:0001583" DB="Sequence Ontology"/>
+          <XRef ID="NM_000668.5:c.1108C&gt;T" DB="RefSeq"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="ProteinChange1LetterCode">R370C</Attribute>
+          <XRef Type="Allelic variant" ID="103720.0002" DB="OMIM"/>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="ProteinChange3LetterCode">ARG370CYS</Attribute>
+          <XRef Type="Allelic variant" ID="103720.0002" DB="OMIM"/>
+        </AttributeSet>
+        <CytogeneticLocation>4q23</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.33" AssemblyStatus="current" Chr="4" Accession="NC_000004.12" start="99307860" stop="99307860" display_start="99307860" display_stop="99307860" variantLength="1" referenceAllele="G" alternateAllele="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="4" Accession="NC_000004.11" start="100229017" stop="100229017" display_start="100229017" display_stop="100229017" variantLength="1" referenceAllele="G" alternateAllele="A"/>
+        <MeasureRelationship Type="within single gene">
+          <Name>
+            <ElementValue Type="Preferred">alcohol dehydrogenase 1B (class I), beta polypeptide</ElementValue>
+          </Name>
+          <Symbol>
+            <ElementValue Type="Preferred">ADH1B</ElementValue>
+          </Symbol>
+          <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.33" AssemblyStatus="current" Chr="4" Accession="NC_000004.12" start="99306387" stop="99321442" display_start="99306387" display_stop="99321442" Strand="-"/>
+          <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="4" Accession="NC_000004.11" start="100227526" stop="100242571" display_start="100227526" display_stop="100242571" variantLength="15046" Strand="-"/>
+          <XRef ID="125" DB="Gene"/>
+          <XRef Type="MIM" ID="103720" DB="OMIM"/>
+          <XRef ID="HGNC:250" DB="HGNC"/>
+        </MeasureRelationship>
+        <XRef Type="Allelic variant" ID="103720.0002" DB="OMIM"/>
+        <XRef Type="rs" ID="2066702" DB="dbSNP"/>
+      </Measure>
+      <Name>
+        <ElementValue Type="Preferred">NM_000668.5(ADH1B):c.1108C&gt;T (p.Arg370Cys)</ElementValue>
+      </Name>
+    </MeasureSet>
+    <TraitSet Type="Disease" ID="6082">
+      <Trait ID="100" Type="Disease">
+        <Name>
+          <ElementValue Type="Preferred">Alcohol dependence</ElementValue>
+          <XRef ID="Alcohol+dependence/7663" DB="Genetic Alliance"/>
+        </Name>
+        <Name>
+          <ElementValue Type="Alternate">ALCOHOLISM</ElementValue>
+          <XRef Type="MIM" ID="103780" DB="OMIM"/>
+        </Name>
+        <Name>
+          <ElementValue Type="Alternate">ALCOHOL DEPENDENCE, PROTECTION AGAINST</ElementValue>
+          <XRef Type="Allelic variant" ID="100650.0001" DB="OMIM"/>
+          <XRef Type="Allelic variant" ID="103720.0001" DB="OMIM"/>
+          <XRef Type="Allelic variant" ID="103720.0002" DB="OMIM"/>
+          <XRef Type="Allelic variant" ID="103730.0001" DB="OMIM"/>
+          <XRef Type="Allelic variant" ID="103730.0002" DB="OMIM"/>
+        </Name>
+        <XRef ID="C0001973" DB="MedGen"/>
+        <XRef Type="MIM" ID="103780" DB="OMIM"/>
+      </Trait>
+    </TraitSet>
+  </ReferenceClinVarAssertion>
+  <ClinVarAssertion ID="40113">
+    <ClinVarSubmissionID localKey="103720.0002_ALCOHOL DEPENDENCE, PROTECTION AGAINST" submitter="OMIM" submitterDate="2010-11-18" title="ADH1B, ARG370CYS_ALCOHOL DEPENDENCE, PROTECTION AGAINST"/>
+    <ClinVarAccession Acc="SCV000040113" Version="1" Type="SCV" OrgID="3" DateUpdated="2017-04-07"/>
+    <RecordStatus>current</RecordStatus>
+    <ClinicalSignificance DateLastEvaluated="2007-01-01">
+      <ReviewStatus>no assertion criteria provided</ReviewStatus>
+      <Description>protective</Description>
+    </ClinicalSignificance>
+    <Assertion Type="variation to disease"/>
+    <ExternalID DB="OMIM" ID="103720.0002" Type="Allelic variant"/>
+    <ObservedIn>
+      <Sample>
+        <Origin>germline</Origin>
+        <Species>human</Species>
+        <AffectedStatus>not provided</AffectedStatus>
+      </Sample>
+      <Method>
+        <MethodType>literature only</MethodType>
+      </Method>
+      <ObservedData>
+        <Attribute Type="Description">The ARG369CYS variant has been designated as R370C (rs2066702) based on numbering which includes the translation initiation codon (Edenberg, 2007).</Attribute>
+        <Citation>
+          <ID Source="PubMed">17718394</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData>
+        <Attribute Type="Description">The cys369 variant of ADH1B is often referred to as ADH1B*3. However, Edenberg (2007) noted that ADH1B*3 is an allele that also includes the arg48 ADH1B variant (103720.0001).</Attribute>
+        <Citation>
+          <ID Source="PubMed">17718394</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData>
+        <Attribute Type="Description">Bosron et al. (1980) described a novel molecular isoform of human ADH1B, designated ADH(Indianapolis), in 29% of liver specimens from African Americans. Bosron et al. (1983) found that the frequency of the Indianapolis variant was 0.16 in African Americans and was not found in any of 63 livers from white Americans. Agarwal et al. (1981) could find no instance of the Indianapolis variant in Germany or Japan.</Attribute>
+        <Citation>
+          <ID Source="PubMed">7003596</ID>
+        </Citation>
+        <Citation>
+          <ID Source="PubMed">6354175</ID>
+        </Citation>
+        <Citation>
+          <ID Source="PubMed">7035335</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData>
+        <Attribute Type="Description">Burnell et al. (1987) demonstrated that the variant observed in African Americans results from an arg370-to-cys substitution in exon 9 of the ADH1B gene: they referred to this variant as ADH1B*3. Burnell et al. (1987) predicted that arg370 interacts with the nicotinamide phosphate moiety of NAD(H) and that this accounts for the effect of the R370C substitution in decreasing the isoenzyme's affinity for coenzyme, which results in higher turnover rate during ethanol oxidation.</Attribute>
+        <Citation>
+          <ID Source="PubMed">3619918</ID>
+        </Citation>
+      </ObservedData>
+      <ObservedData>
+        <Attribute Type="Description">Edenberg et al. (2006) presented evidence suggesting that the ADH1B*3 allele has a protective effect against alcohol dependence among African Americans.</Attribute>
+        <Citation>
+          <ID Source="PubMed">16571603</ID>
+        </Citation>
+      </ObservedData>
+    </ObservedIn>
+    <MeasureSet Type="Variant">
+      <Measure Type="Variation">
+        <Name>
+          <ElementValue Type="Preferred">ADH1B, ARG370CYS</ElementValue>
+        </Name>
+        <AttributeSet>
+          <Attribute Type="NonHGVS">ARG370CYS</Attribute>
+        </AttributeSet>
+        <MeasureRelationship Type="variant in gene">
+          <Symbol>
+            <ElementValue Type="Preferred">ADH1B</ElementValue>
+          </Symbol>
+        </MeasureRelationship>
+        <XRef DB="OMIM" ID="103720.0002" Type="Allelic variant"/>
+      </Measure>
+    </MeasureSet>
+    <TraitSet Type="Disease">
+      <Trait Type="Disease">
+        <Name>
+          <ElementValue Type="Preferred">ALCOHOL DEPENDENCE, PROTECTION AGAINST</ElementValue>
+        </Name>
+      </Trait>
+    </TraitSet>
+  </ClinVarAssertion>
+</ClinVarSet>
