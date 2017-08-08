@@ -12,10 +12,10 @@
 
 # TODO:
 # * decide which <tags> information in <ReferenceClinVarAssertion> to be moved under the variation:###
-# * support <TraitSet>
+# * support <TraitSet> --> almost done
 # * support <MeasureRelationship>
 # * may support SCV <ExteranalID>
-# * decide how much support SCV's <MeasureSet> (less informative, might not normalized)
+# * decide how much support SCV's <MeasureSet> (less informative, might not be normalized)
 # * parse HGVS
 # * use FALDO
 # * link to Identifiers.org
