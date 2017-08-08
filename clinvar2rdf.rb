@@ -38,7 +38,7 @@ module TripleSupport
   end
 
   def usdate2date(str)
-    return Date.parse(str).strftime("%Y-%m-%d")  
+    return Date.parse(str).strftime("%Y-%m-%d")
   end
 
   def new_uuid
@@ -55,16 +55,12 @@ module TripleSupport
     puts subject
   end
 
-  def put_po(predicate, object, continue = true)
+  def put_po(predicate, object, continue = ';')
     offset, margin = pad(predicate)
-    if continue
-      puts "#{offset}#{predicate}#{margin}#{object} ;"
-    else
-      puts "#{offset}#{predicate}#{margin}#{object} ."
-    end
+    puts "#{offset}#{predicate}#{margin}#{object} #{continue}"
   end
 
-  def put_blank(predicate, item, continue = true, &proc)
+  def put_blank(predicate, item, continue = ';', &proc)
     offset, margin = pad(predicate)
     puts "#{offset}#{predicate}#{margin}["
     @@turtle_indent += 1
@@ -77,7 +73,7 @@ module TripleSupport
     end
   end
 
-  def put_blank_po(predicate, object, continue = true)
+  def put_blank_po(predicate, object, continue = ';')
     offset, margin = pad(predicate)
     put_po(predicate, object, continue)
   end
@@ -117,7 +113,6 @@ PREFIXES = '# ClinVar ontology
 @prefix obo:                <http://purl.obolibrary.org/obo/> .
 @prefix sio:                <http://semanticscience.org/resource/> .
 @prefix so:                 <http://purl.obolibrary.org/obo/so#> .
-@prefix cvo:                <http://purl.jp/bio/10/clinvar/> .
 @prefix exo:                <http://purl.jp/bio/10/exac/> .
 @prefix clinvar:            <http://identifiers.org/clinvar/> .
 @prefix clinvar_record:     <http://identifiers.org/clinvar.record/> .
@@ -475,7 +470,7 @@ class Variant
             put_blank_po("cvo:#{key}", quote(value))
           end
         end
-        put_blank_po("cvo:strand", quote(@location_strand || ""), false)
+        put_blank_po("cvo:strand", quote(@location_strand || ""), '')
       }
     end
     put_po("cvo:cytogenetic_location", quote(@cytogenetic_location)) if @cytogenetic_location
@@ -529,11 +524,11 @@ class Variant
       put_po("cvo:phenotype_xref", uri)
     end
     put_po("cvo:number_of_submissions", @rcv.scvs.size)
-    put_po("cvo:reference", "clinvar_record:#{@rcv.acc}", false)
+    put_po("cvo:reference", "clinvar_record:#{@rcv.acc}", '.')
     phenotype_xrefs.each do |uri, db, id|
       put_s(uri)
       put_po("rdf:type", db)
-      put_po("dc:identifier", quote(id), false)
+      put_po("dct:identifier", quote(id), '.')
     end
 
     @rcv.to_rdf
@@ -579,13 +574,13 @@ class RCV
     @observations.each do |observation|
       put_blank("cvo:observation", observation) { |item|
         put_blank_po("rdfs:comment", quote(item[:description]))
-        put_blank_po("dct:references", item[:citation].map{|pmid| "pubmed:#{pmid}"}.join(", "), false)
+        put_blank_po("dct:references", item[:citation].map{|pmid| "pubmed:#{pmid}"}.join(", "), '')
       }
     end
 
     if self.class == RCV
       scvs = @scvs.map{ |scv| "clinvar_submission:#{scv.acc}" }.join(", ")
-      put_po("cvo:submission", scvs, false)
+      put_po("cvo:submission", scvs, '.')
 
       @scvs.each do |scv|
         scv.to_rdf
@@ -623,7 +618,7 @@ class SCV < RCV
       }
     end
     put_po("cvo:submitter", quote(@submitter))
-    put_po("cvo:submission_date", quote_date(@submitter_date), false)
+    put_po("cvo:submission_date", quote_date(@submitter_date), '.')
   end
 end
 
@@ -631,4 +626,3 @@ end # module
 
 
 ClinVar::Parser.new(Nokogiri::XML(ARGF))
-
