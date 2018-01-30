@@ -238,8 +238,8 @@ class Parser
       parse_simple_allele(data)
     end
     if data = node.at('Haplotype')
-      # TODO: implement this
-      #parse_haplotype(data)
+      # TODO: implement this (now working on this)
+      parse_haplotype(data)
     end
     if data = node.at('Genotype')
       # TODO: implement this
@@ -249,18 +249,21 @@ class Parser
 
   def parse_simple_allele(node)
     put_spo(@subject, "cvo:allele_id", quote(node['AlleleID']))
-    parse_gene_list(node.at('GeneList'))
-    # <Name> == <VariationArchive Name>
-    # <VariantType> == <VariationArchive VariationType>
     put_s(@subject)
-    parse_location(node.at('Location'), '.')
+    put_blank('cvo:simple_allele', node, '.') do |item|
+      parse_gene_list(item.at('GeneList'))
+      #parse_name (skip <Name> == <VariationArchive Name>)
+      #parse_variation_type (skip <VariantType> == <VariationArchive VariationType>)
+      parse_location(item.at('Location'), '.')
+      parse_other_name_list(item.at('OtherNameList'))
+      parse_protein_change(item.at('ProteinChange'))
+      put_blank_po("rdf:type", "cvo:SimpleAllele", '')
+    end
     @faldo.to_rdf
-    
   end
 
   def parse_gene_list(node)
     node.xpath('Gene').each do |gene|
-      put_s(@subject)
       put_blank("cvo:gene", gene, '.') do |item|
         item.attributes.each do |key, hash|
           case hash.name
@@ -287,7 +290,6 @@ class Parser
         end
         put_blank_po("rdf:type", "cvo:Gene", '')
       end
-      @faldo.to_rdf
     end
   end
 
@@ -337,7 +339,29 @@ class Parser
     end
   end
 
-  def parse_haplotype
+  def parse_other_name_list(node)
+    if node
+      node.xpath('Name').each do |item|
+        if names = item.content
+          names.split(/,\s+/).each do |name|
+            put_po('skos:altLabel', quote(name))
+          end
+        end
+      end
+    end
+  end
+
+  def parse_protein_change(node)
+    if node
+      put_po('cvo:protein_change', quote(node.content))
+    end
+  end
+
+  def parse_haplotype(node)
+    put_spo(@subject, "cvo:number_of_copies", quote(node['NumberOfCopies']))
+    node.xpath('SimpleAllele').each do |data|
+      parse_simple_allele(data)
+    end
   end
 
   def parse_genotype
