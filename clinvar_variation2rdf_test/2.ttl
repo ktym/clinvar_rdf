@@ -1,0 +1,148 @@
+# ClinVar ontology
+@prefix cvo:                <http://purl.jp/bio/10/clinvar#> .
+@prefix exo:                <http://purl.jp/bio/10/exac#> .
+
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:                 <http://purl.org/dc/elements/1.1/> .
+@prefix dct:                <http://purl.org/dc/terms/> .
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix faldo:              <http://biohackathon.org/resource/faldo#> .
+@prefix obo:                <http://purl.obolibrary.org/obo/> .
+@prefix sio:                <http://semanticscience.org/resource/> .
+@prefix clinvar:            <http://identifiers.org/clinvar/> .
+@prefix clinvar_record:     <http://identifiers.org/clinvar.record/> .
+@prefix clinvar_submission: <http://identifiers.org/clinvar.submission/> .
+@prefix dbsnp:              <http://identifiers.org/dbsnp/> .
+@prefix exac_variant:       <http://identifiers.org/exac.variant/> .
+@prefix efo:                <http://identifiers.org/efo/> .
+@prefix ensembl:            <http://identifiers.org/ensembl/> .
+@prefix hgmd:               <http://identifiers.org/hgmd/> .
+@prefix hgnc:               <http://identifiers.org/hgnc/> .
+@prefix hp:                 <http://identifiers.org/hp/> .
+@prefix medgen:             <http://identifiers.org/medgen/> .
+@prefix mesh:               <http://identifiers.org/mesh/> .
+@prefix ncbigene:           <http://identifiers.org/ncbigene/> .
+@prefix omim:               <http://identifiers.org/omim/> .
+@prefix orphanet:           <http://identifiers.org/orphanet/> .
+@prefix pmc:                <http://identifiers.org/pmc/> .
+@prefix pubmed:             <http://identifiers.org/pubmed/> .
+@prefix snomedct:           <http://identifiers.org/snomedct/> .
+@prefix so:                 <http://identifiers.org/so/> .
+@prefix uniprot:            <http://identifiers.org/uniprot/> .
+@prefix refseq:             <http://identifiers.org/refseq/> .
+@prefix ncbi_bookshelf:     <https://www.ncbi.nlm.nih.gov/books/> .
+@prefix uniprot_protein:    <http://purl.uniprot.org/uniprot/> .
+@prefix uniprot_annotation: <http://purl.uniprot.org/annotation/> .
+@prefix clinvar_homepage:   <https://www.ncbi.nlm.nih.gov/clinvar/variation/> .
+
+<http://identifiers.org/clinvar/2>	rdf:type	cvo:Variantion .
+<http://identifiers.org/clinvar/2>	dct:identifier	"2" .
+<http://identifiers.org/clinvar/2>	rdfs:label	"NM_014855.2(AP5Z1):c.80_83delGGATinsTGCTGTAAACTGTAACTGTAAA (p.Arg27_Ala362delinsLeuLeuTer)" .
+<http://identifiers.org/clinvar/2>	cvo:variation_type	"Indel" .
+<http://identifiers.org/clinvar/2>	cvo:variation_type_iri	so:1000032 .
+<http://identifiers.org/clinvar/2>	cvo:date_created	"2010-12-01" .
+<http://identifiers.org/clinvar/2>	cvo:date_last_updated	"2015-02-18" .
+<http://identifiers.org/clinvar/2>	cvo:accession	"VCV000000002" .
+<http://identifiers.org/clinvar/2>	cvo:version	"1" .
+<http://identifiers.org/clinvar/2>	cvo:record_type	"interpreted" .
+<http://identifiers.org/clinvar/2>	cvo:number_of_submissions	"1" .
+<http://identifiers.org/clinvar/2>	cvo:number_of_submitters	"1" .
+<http://identifiers.org/clinvar/2>	cvo:record_status	"current" .
+<http://identifiers.org/clinvar/2>	cvo:species	"Homo sapiens" .
+<http://identifiers.org/clinvar/2>	cvo:record_type_iri	cvo:InterpretedRecord .
+<http://identifiers.org/clinvar/2>	cvo:allele_id	"15041" .
+
+<http://identifiers.org/clinvar/2>
+	cvo:simple_allele		[
+		cvo:gene			[
+			cvo:gene_symbol			"AP5Z1" ;
+			cvo:gene_full_name		"adaptor related protein complex 5 zeta 1 subunit" ;
+			cvo:gene_id			"9907" ;
+			cvo:gene_ncbi_iri		ncbigene:9907 ;
+			cvo:gene_hgnc_id		"HGNC:22197" ;
+			cvo:gene_hgnc_iri		hgnc:22197 ;
+			cvo:gene_source			"submitted" ;
+			cvo:gene_relationship_type	cvo:RelationshipType\/WithinSingleGene ;
+			cvo:location			[
+				cvo:cytogenetic_location	"7p22.1" ;
+				cvo:sequence_location		[
+					cvo:assembly			"GRCh37" ;
+					cvo:assembly_accession_version	"GCF_000001405.25" ;
+					cvo:assembly_status		"previous" ;
+					cvo:chr				"7" ;
+					cvo:accession			"NC_000007.13" ;
+					cvo:start			4815261 ;
+					cvo:stop			4834025 ;
+					cvo:display_start		4815261 ;
+					cvo:display_stop		4834025 ;
+					faldo:location			refseq:NC_000007.13\#region:4815261-4834025:1 ;
+					rdf:type			cvo:SequenceLocation 
+				] ;
+				cvo:sequence_location		[
+					cvo:assembly			"GRCh38" ;
+					cvo:assembly_accession_version	"GCF_000001405.33" ;
+					cvo:assembly_status		"current" ;
+					cvo:chr				"7" ;
+					cvo:accession			"NC_000007.14" ;
+					cvo:start			4775617 ;
+					cvo:stop			4794395 ;
+					cvo:display_start		4775617 ;
+					cvo:display_stop		4794395 ;
+					faldo:location			refseq:NC_000007.14\#region:4775617-4794395:1 ;
+					rdf:type			cvo:SequenceLocation 
+				] ;
+				rdf:type			cvo:Location 
+			] ;
+			rdfs:seeAlso			omim:613653 ;
+			rdf:type			cvo:Gene 
+		] .
+		cvo:location			[
+			cvo:cytogenetic_location	"7p22.1" ;
+			cvo:sequence_location		[
+				cvo:assembly			"GRCh37" ;
+				cvo:assembly_accession_version	"GCF_000001405.25" ;
+				cvo:assembly_status		"previous" ;
+				cvo:chr				"7" ;
+				cvo:accession			"NC_000007.13" ;
+				cvo:start			4815261 ;
+				cvo:stop			4834025 ;
+				cvo:display_start		4815261 ;
+				cvo:display_stop		4834025 ;
+				faldo:location			refseq:NC_000007.13\#region:4815261-4834025:1 ;
+				rdf:type			cvo:SequenceLocation 
+			] ;
+			cvo:sequence_location		[
+				cvo:assembly			"GRCh38" ;
+				cvo:assembly_accession_version	"GCF_000001405.33" ;
+				cvo:assembly_status		"current" ;
+				cvo:chr				"7" ;
+				cvo:accession			"NC_000007.14" ;
+				cvo:start			4775617 ;
+				cvo:stop			4794395 ;
+				cvo:display_start		4775617 ;
+				cvo:display_stop		4794395 ;
+				faldo:location			refseq:NC_000007.14\#region:4775617-4794395:1 ;
+				rdf:type			cvo:SequenceLocation 
+			] ;
+			rdf:type			cvo:Location 
+		] .
+		skos:altLabel			"AP5Z1" ;
+		skos:altLabel			"4-BP DEL/22-BP INS" ;
+		skos:altLabel			"NT80" ;
+		rdf:type			cvo:SimpleAllele 
+	] .
+
+refseq:NC_000007.14\#region:4775617-4794395:1	rdf:type	faldo:Region .
+refseq:NC_000007.14\#region:4775617-4794395:1	faldo:begin	refseq:NC_000007.14\#position:4775617:1 .
+refseq:NC_000007.14\#region:4775617-4794395:1	faldo:end	refseq:NC_000007.14\#position:4794395:1 .
+refseq:NC_000007.14\#position:4775617:1	rdf:type	faldo:ExactPosition .
+refseq:NC_000007.14\#position:4775617:1	rdf:type	faldo:ForwardStrandPosition .
+refseq:NC_000007.14\#position:4775617:1	faldo:position	4775617 .
+refseq:NC_000007.14\#position:4775617:1	faldo:reference	refseq:NC_000007.14 .
+refseq:NC_000007.14\#position:4794395:1	rdf:type	faldo:ExactPosition .
+refseq:NC_000007.14\#position:4794395:1	rdf:type	faldo:ForwardStrandPosition .
+refseq:NC_000007.14\#position:4794395:1	faldo:position	4794395 .
+refseq:NC_000007.14\#position:4794395:1	faldo:reference	refseq:NC_000007.14 .
